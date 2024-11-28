@@ -1,0 +1,15 @@
+#Test route
+curl --request GET http://127.0.0.1:5000
+
+#test get-json route
+curl --request GET http://127.0.0.1:5000/get-json
+
+#test post-json route
+curl --request POST http://127.0.0.1:5000/post-json \
+--header "Content-Type: application/json" \
+--data
+'{
+ "forename": "Francis",
+ "surname": "Morrissey",
+ "email": "fm10@bolton.ac.uk"
+}
